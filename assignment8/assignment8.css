@@ -2,6 +2,9 @@
 /* CSS Document */
 
 /* || General setup */
+* {
+  box-sizing: border-box; /* Added to include padding in width calculations for all elements */
+}
 
 html, body {
   margin: 0;
