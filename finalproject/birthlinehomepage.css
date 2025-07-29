@@ -1,0 +1,225 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.header-bar {
+    background: #fff;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-prefix {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #49709c;
+    font-weight: 700;
+}
+
+.logo-heart {
+    font-size: 2.2rem;
+    color: #49709c;
+    margin: 0 4px;
+}
+
+.logo-main {
+    font-family: 'Georgia', serif;
+    font-size: 2.8rem;
+    color: #49709c;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d6d6d6;
+    color: #49709c;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+
+}
+
+.topbar-left {
+    font-weight: 500;
+    flex: 1;
+}
+
+.topbar-center {
+    text-align: center;
+    flex: 1;
+}
+
+.topbar-newsletter {
+    flex: 1;
+    text-align: right;
+}
+
+.topbar-newsletter button {
+    background: #666;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    background: #49709c;
+    padding: 48px 0;
+    margin: 0 auto;     /* Center the content */
+    box-sizing: border-box;
+}
+.video-section,
+.about-section {
+    margin-top:0;
+    align-self: flex-start;
+    width: 50%;
+    min-width: 400px;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+
+.video-section {
+    background: #223a57;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    text-align: center;
+    min-width: 600px;
+}
+
+.video-wrapper {
+    width: 700px;
+    max-width: 100%;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width:100%;
+    height: 394px;
+    border-radius: 8px;
+    border: none;
+    display: block;
+}
+
+
+.watch-link {
+    margin-top: 24px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.about-section {
+    max-width: 700px;
+    background: #49709c;
+    padding: 32px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.about-section strong,
+.about-section em {
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+.photo-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    margin: 72px auto 72px auto;
+    max-width: 1200px;
+}
+.photo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-section .photo {
+    width: 269.99px;
+    height: 348px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    background: #eee;
+}
+
+.photo-link {
+    margin-top: 12px;
+    color: #49709c;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.photo-link:hover {
+    color: #223a57;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #52709c;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 18px 32px;
+    font-size: 1.15rem;
+    border-bottom: 4px solid transparent;
+    transition: background 0.2s, border-bottom 0.2s;
+}
+
+nav a:hover, nav a.active {
+    background: #395076;
+    border-bottom: 4px solid #fff;
+}
+
+nav a.donate {
+    background: #000080;
+    border-bottom: 4px solid #000080;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2rem;
+    font: 700 2rem 'Segoe UI', Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem 'Segoe UI', Arial, sans-serif;
+    color: #000000;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    text-align: center;
+}
