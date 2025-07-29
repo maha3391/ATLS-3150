@@ -237,11 +237,11 @@ h2 {
 }
 
 .about-section a {
-    color: #fff; /* Darker purple for better contrast and readability */
+    color: #fff; 
     text-decoration: underline;
     font-weight: 500;
 }
 
 .about-section a:hover {
-    color: #4a148c; /* Darker hover state */
+    color: #4a148c; 
 }
