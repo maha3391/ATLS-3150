@@ -22,20 +22,20 @@ body {
 .logo-prefix {
     font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 1.4rem;
-    color: #49709c;
+    color: #052c58;
     font-weight: 700;
 }
 
 .logo-heart {
     font-size: 2.2rem;
-    color: #49709c;
+    color: #052c58;
     margin: 0 4px;
 }
 
 .logo-main {
     font-family: 'Georgia', serif;
     font-size: 2.8rem;
-    color: #49709c;
+    color: #052c58;
     font-weight: 500;
     letter-spacing: 2px;
 }
@@ -45,7 +45,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #d6d6d6;
-    color: #49709c;
+    color: #052c58;
     padding: 12px 40px;
     font-size: 1.1rem;
 
@@ -82,7 +82,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 48px;
-    background: #49709c;
+    background: #3e6898;
     padding: 48px 0;
     margin: 0 auto;     /* Center the content */
     box-sizing: border-box;
@@ -98,12 +98,11 @@ body {
 }
 
 .video-section {
-    background: #223a57;
-    padding: 32px;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     text-align: center;
     min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video-wrapper {
@@ -129,12 +128,12 @@ body {
 
 .about-section {
     max-width: 700px;
-    background: #49709c;
-    padding: 32px;
+    background: #3e6898;
+    padding: 0 32px 32px 32px;
     border-radius: 12px;
     color: #fff;
     font-size: 1.1rem;
-    line-height: 1.7;
+    line-height: 1.8;
     text-align: center;
 }
 
@@ -183,7 +182,7 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    background: #52709c;
+    background: #3e6898;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
@@ -212,14 +211,37 @@ h1{
     font-size: 2rem;
     font: 700 2rem 'Segoe UI', Arial, sans-serif;
     color: #fff;
+    margin-top: 0;
     margin-bottom: 16px;
     text-align: center;
 }
 
 h2 {
     font-size: 1.5rem 'Segoe UI', Arial, sans-serif;
-    color: #000000;
+    color: #052c58;
     margin-top: 64px;
     margin-bottom: 16px;
     text-align: center;
+}
+.about-section p {
+    margin-bottom: 16px; /* Space between paragraphs */
+}
+
+.about-section ul {
+    margin: 0 0 16px 20px; /* Consistent spacing for lists */
+    padding-left: 20px;
+}
+
+.about-section li {
+    margin-bottom: 12px; /* Space between list items */
+}
+
+.about-section a {
+    color: #fff; /* Darker purple for better contrast and readability */
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.about-section a:hover {
+    color: #4a148c; /* Darker hover state */
 }
