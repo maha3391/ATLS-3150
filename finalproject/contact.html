@@ -62,22 +62,30 @@
         <p class="instructions">Fields marked with an <span class="asterisk">*</span> are required.</p>
         <fieldset>
             <legend>Contact Form</legend>
-                <form>
-                    <label>Name <span class="asterisk">* </label><br>
-                    <input type="text" placeholder="First" style="width: 120px;">
-                    <input type="text" placeholder="Last" style="width: 120px;"><br>
-                    <label>Phone Number</label><br>
-                    <input type="text" style="width: 40px;"> -
-                    <input type="text" style="width: 40px;"> -
-                    <input type="text" style="width: 60px;"><br>
-                    <label>Email <span class="asterisk">*</label><br>
-                    <input type="email" style="width: 250px;"><br>
-                    <label>Subject</label><br>
-                    <input type="text" style="width: 250px;"><br>
-                    <label>Message <span class="asterisk">*</label><br>
-                    <textarea rows="6" cols="40"></textarea><br>
-                    <button type="submit">Submit</button>
-                </form>
+            <form id="contactForm">
+                <label for="firstName">Name <span class="asterisk">*</span></label><br>
+                <input type="text" id="firstName" name="firstName" placeholder="First" style="width: 120px;" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Last" style="width: 120px;" required>
+                <div class="error" id="nameError"></div><br>
+                
+                <label for="phone1">Phone Number</label><br>
+                <input type="text" id="phone1" name="phone1" style="width: 40px;" maxlength="3" pattern="\d{3}"> -
+                <input type="text" id="phone2" name="phone2" style="width: 40px;" maxlength="3" pattern="\d{3}"> -
+                <input type="text" id="phone3" name="phone3" style="width: 60px;" maxlength="4" pattern="\d{4}"><br>
+                
+                <label for="email">Email <span class="asterisk">*</span></label><br>
+                <input type="email" id="email" name="email" style="width: 250px;" required>
+                <div class="error" id="emailError"></div><br>
+                
+                <label for="subject">Subject</label><br>
+                <input type="text" id="subject" name="subject" style="width: 250px;"><br>
+                
+                <label for="message">Message <span class="asterisk">*</span></label><br>
+                <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+                <div class="error" id="messageError"></div><br>
+                
+                <button type="submit">Submit</button>
+            </form>
         </fieldset>
         <div style="font-size: 0.9rem; color: #888; margin-top: 16px;">
             This site is protected by reCAPTCHA Enterprise and the Google
